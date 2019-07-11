@@ -31,14 +31,14 @@ public class Practice04Test {
         assertThat(tom.getKlass()).isEqualTo(2);
     }
 
-    //30s
+    //1min
     @Test
     public void should_student_introduce_with_class() throws Exception {
         Student tom = new Student("Tom", 21, 2);
         assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Student. I am at Class 2.");
     }
 
-    //30s
+    //1min
     @Test
     public void should_worker_have_name_and_age() throws Exception {
         Worker tom = new Worker("Tom", 21);
@@ -46,7 +46,7 @@ public class Practice04Test {
         assertThat(tom.getAge()).isEqualTo(21);
     }
 
-    //30s
+    //1min
     @Test
     public void should_worker_introduce_itself_with_no_field() throws Exception {
         Worker tom = new Worker("Tom", 21);
