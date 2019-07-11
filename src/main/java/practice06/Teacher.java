@@ -12,15 +12,15 @@ public class Teacher extends Person{
     }
 
     public int getKlass(){
-        return this.klass;
+        return klass;
     }
 
     public String introduce(){
         String introduce = null;
-        if(this.klass == 0){
+        if(klass == 0){
             introduce = "No Class";
         }else {
-            introduce = "Class " + this.klass;
+            introduce = "Class " + klass;
         }
         return super.introduce() + " I am a Teacher. I teach " + introduce + ".";
     }

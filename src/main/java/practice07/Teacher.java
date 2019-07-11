@@ -12,12 +12,12 @@ public class Teacher extends Person{
     }
 
     public Klass getKlass(){
-        return this.klass;
+        return klass;
     }
 
     public String introduce(){
         String introduceString = null;
-        if(this.klass == null) {
+        if(klass == null) {
             introduceString = "I am a Teacher. I teach No Class.";
         }else {
             introduceString = "I am a Teacher. I teach Class 2.";
@@ -27,7 +27,7 @@ public class Teacher extends Person{
 
     public String introduceWith(Student student) {
         String introduceWithString = null;
-        if(this.klass == student.getKlass()){
+        if(klass == student.getKlass()){
             introduceWithString = "I teach Jerry.";
         }else {
             introduceWithString = "I don't teach Jerry.";
